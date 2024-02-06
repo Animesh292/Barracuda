@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, #122847, #496794);
+}
+
+.header {
+  height: 30px;
+  width: 100%;
+  background-color: #1e3554;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+}
+
+select {
+  font-weight: 100;
+  font-size: 0.9vw;
+  width: 100px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+}
+
+.signin-form {
+  height: 40vh;
+  width: 40vw;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: 75px;
+  border-radius: 10px;
+}
+
+p {
+  padding: 14px 26px;
+  font-weight: 100;
+  font-size: 1vw;
+}
+
+.signin-form input {
+  height: 7vh;
+  width: 35.8vw;
+  margin: 8px;
+  margin-left: 28px;
+  padding-left: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  font-size: 1.9vw;
+}
+
+.subm-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.2vw 2vw 0 0;
+}
+button {
+  height: 6.6vh;
+  width: 6.8vw;
+  background-color: rgb(72, 146, 181);
+  color: white;
+  font-size: 1.28vw;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+input[type="text"][placeholder="guest"]::placeholder {
+  color: black;
+}
+
+input:focus {
+  border-color: rgb(39, 144, 197);
+  outline: none;
+  box-shadow: 0 0 5px rgb(39, 102, 184);
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 0;
+  }
+  select {
+    width: 40px;
+    height: 9px;
+    margin-right: 6px;
+  }
+  .header {
+    height: 19px;
+    width: 100%;
+  }
+  .container {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  img {
+    width: 70%;
+  }
+  .signin-form {
+    height: 16vh;
+    width: 55vw;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 350px;
+    border-radius: 10px;
+  }
+  p {
+    padding: 9px 20px;
+    font-weight: 100;
+    font-size: 1.4vw;
+  }
+  .signin-form input {
+    height: 3vh;
+    width: 45.8vw;
+    margin: 2px;
+    margin-left: 18px;
+    padding-left: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    font-size: 1.9vw;
+  }
+  .subm-btn {
+    margin: 1.4vw 4.4vw 0 0;
+  }
+  button {
+    height: 2.6vh;
+    width: 8.8vw;
+    background-color: rgb(72, 146, 181);
+    font-size: 1.38vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+  }
+}

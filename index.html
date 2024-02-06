@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barracuda Replica</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* CSS to set font color of input fields with placeholder "guest" to black */
+      input[type="text"].guest {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav>
+          <div class="top-right">
+            <select name="English" id="">
+              <option value="English">English</option>
+              <option value="Catalan">Catalan</option>
+              <option value="Espanol">Espanol</option>
+              <option value="Italiano">Italiano</option>
+              <option value="Magyar">Magyar</option>
+              <option value="Nederlands">Nederlands</option>
+              <option value="Polski">Polski</option>
+              <option value="Portugues">Portugues</option>
+              <option value="Dansk">Dansk</option>
+              <option value="Islanska">Islanska</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="main-body">
+        <img
+          src="https://waf.barracuda.com/cgi-mod/header_logo.cgi?size=big"
+          alt="main-heading"
+        />
+        <div class="signin-form">
+          <form action="./message.html">
+            <p>Please enter your administrator login and password.</p>
+            <input type="text" placeholder="guest" />
+            <input type="password" placeholder="Password" />
+            <div class="subm-btn">
+              <button type="submit">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
